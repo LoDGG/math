@@ -1,3 +1,5 @@
+import f as f
+
 from tool import *
 
 
@@ -55,6 +57,7 @@ def LagrangeMeth(f, n):
               autoscale=True)
 
     res = LagrangeSeq(f, a, b, p1, n) if f.eval(b) * (d(f, 2)).eval(b) > 0 else LagrangeSeq(f, b, a, p1, n)
+    p1
     p1.show()
     return res
 
@@ -71,10 +74,11 @@ def NewtonMeth(f, n):
     return res
 
 
+
 """          ----------- Testing CODE : -------------------          """
 
-f = function(x ** 3 - 2 * x + 3, (-3, 3))
+f = function(3.775*x ** 3 -3.6* x**2 + 0.5878*x -0.022, (-10, 10))
 
 # function_graph(f)
-print(LagrangeMeth(f, 3))
+function_graph(f)
 # print(NewtonMeth(f, 3))
